@@ -1,15 +1,10 @@
 name: Hola Mundo
 
 on:
-  workflow_dispatch:
-    inputs:
-      nombre:
-        description: "¿A quién quieres saludar?"
-        required: true
-        default: "Amigo/a"
+  push:
 
 jobs:
-  saludar:
+  hola:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "¡Hola, ${{ github.event.inputs.nombre }}!"
+      - uses: actions/hello-world-javascript-action@main
