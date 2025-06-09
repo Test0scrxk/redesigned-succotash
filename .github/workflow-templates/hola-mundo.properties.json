@@ -1,0 +1,13 @@
+{
+  "name": "Hola Mundo",
+  "description": "Una plantilla que imprime un saludo personalizado",
+  "iconName": "smile",
+  "categories": ["Utility"],
+  "inputs": {
+    "nombre": {
+      "description": "¿A quién quieres saludar?",
+      "required": true,
+      "default": "Amigo/a"
+    }
+  }
+}
